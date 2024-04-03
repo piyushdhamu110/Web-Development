@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval & setTimeOut and cleartimeout</title>
+  </head>
+
+  <body>
+    <div class="conatiner">
+      <h1>:::::::::::::::::TIME MACHINE:::::::::::::::::</h1>
+    </div>
+    <h2 class="calender">Time: <span id="Time"></span></h2>
+  </body>
+  <script>
+    console.log("This is a tutorial");
+    // setTimeout-->Allows us to run the function once after the interval of time
+
+    // clearTimeout---> Allows us to run the function repeatedly after the interval of time
+
+    function greet(name, byeText) {
+      console.log(`Good Morning ${name}, ${byeText}`);
+    }
+
+    setTimeout(greet, 10, "Harry", "Take Care!");
+
+    // setTimeout(greet("harry","goof"),2000); //--->This syntax is Wrong as it is calling the function inside setTimeout
+
+    timeOut = setTimeout(greet, 100, "Jangra", "Take Care!");
+
+    console.log(timeOut);
+    console.log(typeof timeOut); //--> this will give timeOut its unique Id
+
+    // clearTimeout(timeOut);
+
+    // intervalId=setInterval( greet,1000,"Piyush","Good Night");
+    // console.log(intervalId)
+
+    // clearInterval(intervalId);
+
+    function displayTime() {
+      TIME = new Date();
+      //   console.log(TIME);
+      document.getElementById("Time").innerHTML = TIME;
+    }
+
+    setInterval(displayTime, 1000);
+  </script>
+</html>

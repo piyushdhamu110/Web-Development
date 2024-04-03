@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box {
+        background-color: antiquewhite;
+        border: 4px solid black;
+        border-radius: 20px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1.5s ;
+    }
+
+    .container {
+        display: flex;
+        background-color: aqua;
+        border: 5px solid blue;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 600px;
+    }
+
+    .box:hover {
+        transform: rotate(180deg);
+        /* transform: rotate(45deg); --> this will rotate the box by 45 degree */
+
+        /* transform: skew(45deg); */
+        /* transform: skew(45deg); --> this will tilt the box by 45 degree*/
+
+        /* transform: scale(5); */ 
+        /* transform: scale(5); --> 5 times the original size*/ 
+        
+        /* transform: translateX(150px); */
+        /* transform: translateY(150px);  */
+        /* moves the box in x or in y direction */
+        /* transform: translate(150px, 150px); */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+
+</html>

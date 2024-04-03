@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal  */
+        /* *{
+            width:100px;
+        } */
+        .container{
+            background-color: antiquewhite;
+            border: 5px solid rgb(86, 210, 150);
+
+            /* padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px; */
+            
+            /* we can set padding/margin for top,right,bottom,left; */
+            /* padding/margin: top right bottom left; */
+
+            /* padding: 10px 20px 10px 40px; */
+
+            /* padding: y(top/bottom) x(left/right); */
+
+            padding: 20px 30px;
+
+            /* margin: y(top/bottom) x(left/right); */
+
+            margin: 10px 10px;
+
+            border-radius: 20px;
+
+            width: 600px;
+
+            /* on changing the padding/margin if we don't want to change our width then use box-sizing*/
+
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(225, 220, 184);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p>the quick brown fox jumps over the lazy dog</p>
+    </div>
+    <div class="container">
+        <h1>This is my second heading</h1>
+        <p>the quick brown fox jumps over the lazy dog</p>
+
+    </div>
+    <div class="container">
+        <h1>This is my third heading</h1>
+        <p>the quick brown fox jummps over the lazy dog</p>
+    </div>
+
+
+</body>
+
+</html>

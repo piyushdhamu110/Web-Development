@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow functions</title>
+  </head>
+
+  <body>
+    <div class="container">Arrow function tutorial</div>
+    <script>
+      function greet() {
+        console.log("Hello");
+      }
+      greet();
+
+      // Arrow function
+
+      let greet1 = () => {
+        console.log("Hello Piyush");
+      };
+      greet1();
+
+      setTimeout(() => {
+        console.log("We are inside setTimeout function");
+      }, 2000);
+
+      // let sum = (a, b) => {
+      //     return a + b;
+      // }
+
+      // shortut of above function is
+      let sum = (a, b) => a + b;
+
+      // for single input parameter no need to put brackets
+      let half = (a) => a / 2;
+
+      // objects
+
+      let obj1 = {
+        greeting: "Good Morning",
+        names: ["abc", "pq", "rst", "xyz"],
+
+        speak() {
+          console.log("Inside Arrow function"),
+            // This is a arrow function
+            // object>function>arrow function---> in arrow function "this" is considered to be as "this" of its parent "this"
+            this.names.forEach((student) => {
+              console.log(this.greeting + " Good Night " + student);
+            });
+        },
+
+        speak1() {
+          console.log("Inside function"),
+            // this is a simple function
+            // object>function>function---> in simple function "this" is considered to be as its own "this" not of its parent
+            this.names.forEach(function s(student) {
+              console.log(this.greeting + " Good Night " + student);
+            });
+        },
+      };
+      obj1.speak();
+      obj1.speak1();
+    </script>
+  </body>
+</html>
+
+

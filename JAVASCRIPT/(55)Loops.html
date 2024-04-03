@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops in JavaScript</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is about loops in JavaScript</h1>
+    </div>
+    <script>
+      console.log("Loops in JavaScript");
+
+      // For lopp
+      for (let index = 0; index < 5; index++) {
+        console.log(index);
+      }
+
+      // for loop in array
+      let friends = ["Priyanshu", "Ankur", "Shashank", "Aditya"];
+
+      // 1st Type--->
+
+      // for (let index = 0; index < friends.length; index++) {
+      //     console.log("Hello "+ friends[index]);
+      // }
+
+      // 2nd Type(foreach)--->
+
+      // friends.forEach(function f(element)
+      // {
+      //     console.log("Hello friend, "+ element + " to modern JavaSript");
+      // });
+
+      // 3rd Type(for Of)--->
+
+      // for (element of friends) {
+      //     console.log("Hello friend, " + element + " to modern JavaSript Again");
+      // };
+
+      // 4th Type(for in)--->
+
+      let employee = {
+        name: "piyush",
+        age: 19,
+        colege: "AIT",
+      };
+
+      // use "for in" loop to iterate over objects in JavaScript
+
+      for (key in employee) {
+        console.log(`The ${key} of employee is ${employee[key]}`);
+      }
+      console.log(employee.name); //SEE THE DIFFERENCE BETWEEN SYNTAX
+
+      // While loop in JS
+
+      let i = 0;
+      while (i < 4) {
+        console.log(`${i} is very less than 5`);
+        i++;
+      }
+
+      // Do While loop in JS
+      let j = 30;
+      do {
+        console.log(`${j} is less than 5 and we are inside do while loop`);
+        j++;
+      } while (j < 10);
+    </script>
+  </body>
+</html>

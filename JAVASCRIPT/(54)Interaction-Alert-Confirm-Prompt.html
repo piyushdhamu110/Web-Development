@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutorial: Interaction - Alert, Prompt, Confirm</title>
+  </head>
+
+  <body>
+    <div class="conatiner">This is container</div>
+    <script>
+      // Alert in in-browser JavaScript--> Does not return anything
+      alert("Hey What's Up! What are you doing?");
+
+      // Prompt in JS
+      let name = prompt("What is your name?", "Guest");
+      console.log(name);
+
+      // Confirm in JS
+      let delPost = confirm("Do you really want to delete this post?");
+      // console.log(delPost);
+
+      if (delPost) {
+        //(delpost===true)
+        // Code to delete the post
+        console.log("Your post has been deleted successfully");
+      } else {
+        // Code to cancel deletion of the post
+        console.log("Your post has not been deleted");
+      }
+
+      // Exercise
+
+      let age = prompt("What is your age?");
+      if (age >= 18) {
+        console.log("You are allowed in the club.");
+      } else {
+        console.log("You are not allowed in the club");
+      }
+    </script>
+  </body>
+</html>

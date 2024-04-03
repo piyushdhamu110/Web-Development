@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions</title>
+    <style>
+        /* CSS positions : static(default), relative, absolute,fixed, sticky */
+        .container {
+            border: 5px solid rgb(243, 0, 0);
+            background-color: blue;
+            height: 2000px;
+            margin-top: 100px;
+        }
+
+        .box {
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 7px;
+            display: inline-block;
+            /* display: block; */
+            /* Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+            font-size: 50px;
+
+        }
+
+        #box1 {
+            background-color: aliceblue;
+            position: relative;
+            top: 20px;
+        }
+
+        #box2 {
+            background-color: antiquewhite;
+            position: absolute;
+            left: 30px;
+        }
+
+        #box3 {
+            background-color: aquamarine;
+            
+            /* position: relative; */
+            /* relative: position relative to its normal position and will leave a gap at its normal position*/
+
+            /* position: absolute; */
+            /* absolute: relative to its first parent position */
+            /* top: 30px; */
+            /* left: 50px;  */
+
+            /* fixed: position relative to the browser window */
+            position: fixed;
+            right: 20px;
+            bottom: 6px;
+            
+
+        }
+
+        #box4 {
+            background-color: rgb(222, 160, 86);
+
+            position: sticky;
+            top: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX-1</div>
+        <div class="box" id="box2">BOX-2</div>
+        <div class="box" id="box3">BOX-3</div>
+        <div class="box" id="box4">BOX-4</div>
+    </div>
+</body>
+
+</html>

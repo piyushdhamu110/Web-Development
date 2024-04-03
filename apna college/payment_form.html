@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment_from.css" />
+    <title>Payment_Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Payment Form</h1>
+        <hr />
+        <h2>User Information</h2>
+        <hr />
+        <div>
+          <label for="name">Name* :</label>
+          <input
+            type="text"
+            name="myname"
+            id="name"
+            required
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div>
+          <fieldset>
+            <legend>Gender* :</legend>
+            Male <input type="radio" name="gender" id="male" required /> Female
+            <input type="radio" name="gender" id="female" required /> Other
+            <input type="radio" name="gender" id="other" required />
+          </fieldset>
+        </div>
+        <div>
+          <label for="email">Email* :</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="xyz@gmail.com"
+          />
+        </div>
+        <div>
+          <label for="telephone">Mobile Number* :</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            placeholder="1234567890"
+            required
+          />
+        </div>
+        <!-- <div>
+                Address:
+                <br>
+                <textarea placeholder="Enter your Address" name="address" id="address" cols="200" rows="10"></textarea >
+            </div> -->
+        <div>
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Enter your Permanent Address"
+          />
+        </div>
+
+        <div>
+          <label for="pincode">Pincode* :</label>
+          <input type="text" name="pincode" id="pincode" placeholder="123456" />
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter your City Name"
+          />
+        </div>
+        <div>
+          <label for="state">State:</label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="Enter your State Name"
+          />
+        </div>
+        <div>
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Enter your Country Name"
+          />
+        </div>
+
+        <hr />
+        <h2>Payment Information</h2>
+        <hr />
+        <label for="card_type">Card Type* :</label>
+        <select name="card_type" id="card_type">
+          <option value="">--Select Card Type--</option>
+          <option value="rupay">Rupay</option>
+          <option value="MasterCard">MasterCard</option>
+          <option value="CreditCard">CreditCard</option>
+          <option value="DebitCard">DebitCard</option>
+        </select>
+        <div>
+          <label for="card_number">Card Number* :</label>
+          <input
+            type="text"
+            name="card_number"
+            id="card_number"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+        </div>
+        <div>
+          <label for="expiry_date">Expiry Date* :</label>
+          <input type="month" name="expiry_date" id="expiry_date" required />
+        </div>
+        <div>
+          <label for="cvv">CVV* :</label>
+          <input type="password" name="cvv" id="cvv" />
+        </div>
+        <div>
+          <div class="box">
+            <input type="submit" value="Pay Now" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

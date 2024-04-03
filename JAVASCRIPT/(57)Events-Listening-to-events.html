@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tutorial: Events & Listening to Events</title>
+  </head>
+  <style>
+    #btn {
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      margin: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <!-- Browser events
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned-->
+
+    <div class="container">
+      <h1>This is my Heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        optio, praesentium nisi voluptatum omnis quisquam voluptatem quam magnam
+        mollitia et aut corporis modi amet nobis voluptates sunt laudantium rem
+        molestias quaerat qui iusto ad nesciunt quidem. Repellat at qui vel
+        sapiente. Voluptate voluptatem id dolorum est! In accusantium distinctio
+        quo dolores, recusandae soluta voluptates rerum. Adipisci quam enim
+        quibusdam reiciendis, error ad? e a delectus molestias.
+      </p>
+    </div>
+    <button id="btn" onclick="tooglehide()">Show/Hide</button>
+    <script>
+      function tooglehide() {
+        // let btn = document.getElementById('btn');
+        // let para = document.getElementById('para');
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+
+      // 2nd way
+
+      let para = document.getElementById("para");
+
+      para.addEventListener("mouseover", function run() {
+        // alert('Mouse Inside')
+        console.log("Mouse Inside");
+      });
+      para.addEventListener("mouseout", function run() {
+        // alert('Mouse went outside')
+        console.log("Mouse went outside");
+      });
+    </script>
+  </body>
+</html>

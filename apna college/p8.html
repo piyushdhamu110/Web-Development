@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        height: 99vh;
+    }
+    .x{
+        background-color: aqua;
+        margin: 10px;
+    }
+    .col{
+        font-size: 30px;
+        text-align: center;
+    }
+    #col1{
+        display: grid;
+    }
+    #col2{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+    }
+    #col3{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+    }
+    #col4{
+        display: grid;
+        grid-template-rows: repeat(4,auto);
+    }
+    #col5{
+        display: grid;
+        grid-template-rows: repeat(6,auto);
+    }
+    #col6{
+        display: grid;
+        grid-template-rows: repeat(12,auto);
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="col" id="col1">
+            <div class="x">1</div>
+        </div>
+        <div class="col" id="col2">
+            <div class="x">2</div>
+            <div class="x">3</div>
+        </div>
+        <div class="col" id="col3">
+            <div class="x">4</div>
+            <div class="x">5</div>
+            <div class="x">6</div>
+        </div>
+        <div class="col" id="col4">
+            <div class="x">7</div>
+            <div class="x">8</div>
+            <div class="x">9</div>
+            <div class="x">10</div>
+        </div>
+        <div class="col" id="col5">
+            <div class="x">11</div>
+            <div class="x">12</div>
+            <div class="x">13</div>
+            <div class="x">14</div>
+            <div class="x">15</div>
+            <div class="x">16</div>
+        </div>
+        <div class="col" id="col6">
+            <div class="x">17</div>
+            <div class="x">18</div>
+            <div class="x">19</div>
+            <div class="x">20</div>
+            <div class="x">21</div>
+            <div class="x">22</div>
+            <div class="x">23</div>
+            <div class="x">24</div>
+            <div class="x">25</div>
+            <div class="x">26</div>
+            <div class="x">27</div>
+            <div class="x">28</div>
+        </div>
+    </div>
+</body>
+</html>

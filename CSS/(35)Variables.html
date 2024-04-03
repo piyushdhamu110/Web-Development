@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+</head>
+<style>
+    :root {
+        --primary-color: aqua;
+        --danger-color: red;
+        --bkc: rgb(238, 233, 130);
+        --maxw: 900px;
+        --maxh: 500px;
+    }
+
+    .box {
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        background-color: var(--primary-color);
+        margin: 5px 10px;
+        border: 3px solid black;
+        box-shadow: 4px 4px 3px var(--danger-color);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+
+        /* color: var(--danger-color); */
+    }
+
+    .container {
+        background-color: var(--bkc);
+        border: 4px solid black;
+        border-radius: 20px;
+        width: var(--maxw);
+        /* if width is given to container then we have to give margin:auto to align container at centre position */
+
+        height: var(--maxh);
+
+        margin: auto;
+        /*Used to align container at centre position when width to container is given*/
+
+        display: flex;
+
+        align-items: center;
+        /* align item is used to give position vertically to boxes which is inside that container in which align_item is declared */
+
+        justify-content: center;
+        /* justify content is used to give position horizontally to boxes which is inside that container in which justify-content is declared */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">First</div>
+        <div class="box">Second</div>
+        <div class="box">Third</div>
+    </div>
+</body>
+
+</html>

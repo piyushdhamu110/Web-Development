@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and objects</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, esse!
+      </h1>
+    </div>
+    <script>
+      // Types of variables
+      let var1 = 34; //integer
+      let var2 = "string"; //string
+      let var3 = true; //bool
+      let var4 = null; //null
+      let var5 = undefined; //undefined
+
+      let employee = {
+        //object
+        name: "Piyush",
+        salary: 10,
+        channel: "CodeWithPiyush",
+        "channel 2": "ProgrammingWithPiyush",
+      };
+      console.log(employee);
+      console.log(employee.channel);
+      console.log(employee["channel 2"]);
+
+      // let name = [6, 2, 4, "piyush", undefined]; //{this is an array}
+
+      // let name = new Array(41, 2, 4, "piyush","dhamu", undefined); // {this is an object}
+
+      let name = new Array(23); //object
+      console.log(name);
+      console.log(typeof name);
+
+      // sorting of array
+      // name = name.sort();
+
+      // console.log(name);
+      // console.log(name[3]);
+
+      // length of array
+      // console.log(name.length);
+
+      // push back
+      name.push("this is pushed");
+      console.log(name);
+      console.log(typeof name);
+    </script>
+  </body>
+</html>

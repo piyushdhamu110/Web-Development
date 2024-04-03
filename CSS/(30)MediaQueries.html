@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        * {
+            width: 100%;
+        }
+
+        .box {
+            background-color: black;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+
+        }
+
+        @media screen and (max-width: 500px) {
+            #box1 {
+                background-color: aqua;
+                color: black;
+            }
+        }
+
+        @media screen and (min-width:500px) and (max-width: 800px) {
+            #box2 {
+                background-color: red;
+            }
+        }
+
+
+
+        @media not screen and (min-width:800px) and (max-width: 1000px) {
+            #box3 {
+                background-color: yellow;
+                color: black;
+            }
+        }
+
+        @media screen and (min-width:1000px) and (max-width:1200px) {
+            #box4 {
+                background-color: blue;
+            }
+        }
+
+        /* orientation */
+        /* using and b/w two queries--> when both conditions becomes true then only our media query fires */
+        @media screen and (orientation:landscape) and (max-width:1400px) {
+            #box1 {
+                color: greenyellow;
+            }
+        }
+
+        /* using comma b/w two queries --> when atleast one media query becomes becomes true then our media query fires */
+        @media screen and (orientation:landscape),
+        screen and (max-width:1400px) {
+            #box1 {
+                color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">iPhone</div>
+    <div class="box" id="box2">Tablet</div>
+    <div class="box" id="box3">Computer</div>
+    <div class="box" id="box4">Screen</div>
+</body>
+
+</html>

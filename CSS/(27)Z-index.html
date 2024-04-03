@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .box {
+            width: 140px;
+            height: 140px;
+            border: 3px solid black;
+            font-size: 40px;
+        }
+
+        #box1 {
+            background-color: red;
+            position: relative;
+            top: 50px;
+            z-index: 21;
+            /* greater value of z-index will show above to the lesser z-index value element */
+        }
+
+        #box2 {
+            background-color: blue;
+            /* visibility:hidden; */
+            /*visibility:hidden will hide the element but show its empty space  */
+            /* display: none; */
+            /* displat: none will hide the element and the sapce  */
+            position: relative;
+            top: 0px;
+
+            /* z-index: will work only for position: relative,absolute,fixed or sticky */
+            z-index: 20;
+        }
+
+        #box3 {
+            background-color: yellow;
+        }
+
+        #box4 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">BOX-1</div>
+    <div class="box" id="box2">BOX-2</div>
+    <div class="box" id="box3">BOX-3</div>
+    <div class="box" id="box4">BOX-4</div>
+</body>
+
+</html>

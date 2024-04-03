@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: #2b6b87;;
+            border-radius: 37px;
+        }
+
+        .navbar {
+            overflow:auto;
+            /* to remove overflow because of use of float in its child element */
+        }
+
+        .navbar li {
+            float: left;
+            /* when we use float then the element gets overflow from its parent element */
+            /* to remove overflow we use overflow:auto  which is shown in upper .navbar style*/
+            list-style: none;
+            /* list-style:none used to remove dot */
+            margin: 22px 52px;
+            padding-bottom: 7px;
+            margin-top: 9px;
+        }
+
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            /* text decoration is used to remove underline */
+            color: white;
+        }
+
+        .navbar li a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .search{
+            float: right;
+            /* color: red; */
+            padding: 5px 47px;
+        }
+        .navbar input{
+            border: 4px solid black;
+            border-radius: 20px;
+            padding: 3px 5px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

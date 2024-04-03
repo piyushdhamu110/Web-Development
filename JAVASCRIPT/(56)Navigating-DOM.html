@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      JavaScript Tutorial: Navigating The DOM(Document Object Model)
+    </title>
+  </head>
+
+  <body>
+    <div id="main" class="container">
+      <ul id="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li>More About us</li>
+      </ul>
+    </div>
+    <div class="container">this is another container</div>
+    <script>
+      let x = document.getElementById("main");
+      console.log(x);
+
+      let y = document.getElementById("nav");
+      console.log(y);
+
+      let c = document.getElementsByClassName("container");
+      console.log(c);
+
+      // CSS Selectors
+
+      // document.querySelector---> selects the first element
+      let sel = document.querySelector(`.container`);
+      console.log("First Selector", sel);
+
+      let sel1 = document.querySelector(`#nav>li`);
+      console.log("First Selector", sel1);
+
+      // document.querySelectorAll--> selects all the elements by the name
+      let sel2 = document.querySelectorAll(`.container`);
+      console.log("All Selectors", sel2);
+
+      let sel3 = document.querySelectorAll(`#nav`);
+      console.log("All Selectors", sel3);
+    </script>
+  </body>
+</html>

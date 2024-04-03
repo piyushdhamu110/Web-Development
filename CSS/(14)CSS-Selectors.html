@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors</title>
+    <style>
+      /* element selector */
+      p {
+        border: 2px solid red;
+      }
+
+      .redelement {
+        color: white;
+      }
+
+      /* Id selector */
+      #firstpara {
+        color: blue;
+        background-color: aliceblue;
+      }
+
+      /* .bgblue{
+            background-color: aquamarine;
+        } */
+      #secondpara {
+        background-color: black;
+      }
+
+      /* class selector */
+      .bgblue {
+        background-color: aquamarine;
+      }
+
+      /* grouping selectors */
+      footer,
+      span {
+        background-color: paleturquoise;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>CSS Selectors</h2>
+    <p id="firstpara">This is a simple paragraph to demon. css selectors</p>
+    <p id="secondpara" class="redelement bgblue">
+      This is a simple paragraph to demon. css selectors
+    </p>
+    <p>This is a simple paragraph to demon. css selectors</p>
+    <div>
+      <p>this is div para to demo. css selectors\</p>
+    </div>
+    <footer>this is footer</footer>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+  </body>
+</html>

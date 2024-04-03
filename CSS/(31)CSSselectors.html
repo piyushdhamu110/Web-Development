@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+</head>
+<style>
+    h1 {
+        background-color: black;
+        border: 5px solid aqua;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        margin: 5px;
+        padding: 12px;
+    }
+
+
+    /* if p is contained by any li which is contained by div */
+    div li p {
+        color: blue;
+        font-size: 20px;
+        border: 3px solid black;
+        margin: 10px;
+        padding: 9px 9px;
+        border-radius: 10px;
+    }
+
+    div p {
+        color: red;
+        font-size: 20px;
+        border: 3px solid black;
+        margin: 10px;
+        padding: 9px 9px;
+        border-radius: 10px;
+    }
+
+
+    /* if p is right inside div then this css will be applied */
+    div>p {
+        /* direct p inside div */
+        color: chartreuse;
+    }
+
+    /* if p is right after div */
+    div+p {
+        /* means whose last sibling is div */
+        /* or in other words jis (p tag) se phle ek (div tag) aaye */
+        background-color: bisque;
+        color: rgb(9, 137, 250);
+    }
+</style>
+
+<body>
+    <h1>More About CSS Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is p inside li inside ul inside div</p>
+                </li>
+                <li>this will not effected</li>
+                <p>This is paragraph inside div inside ul</p>
+            </ul>
+            <p>This is inner most paragraph</p>
+        </div>
+        <p>This is middle paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+
+</html>

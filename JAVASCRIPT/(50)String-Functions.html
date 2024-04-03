@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Functions in JavaScript</title>
+  </head>
+
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officiis
+      neque cum? Quam harum, modi dolorem dicta hic, voluptatum, perspiciatis
+      illo cumque in distinctio est ullam accusamus libero expedita repudiandae
+      at aliquam omnis commodi. lorem400
+    </p>
+    <script>
+      var name = "Piyush Jangra";
+      console.log(name);
+
+      // First occurence of substring
+      var position = name.indexOf("a");
+      console.log(position);
+
+      // Last occurence of a  substring
+      position = name.lastIndexOf("a");
+      console.log(position);
+
+      // Substring of a string
+      var substr = name.slice(1, 9);
+      // or we can use name.substring(1,5)
+      console.log(substr);
+
+      // replace of a substring in a string
+      var replaced = name.replace("Jangra", "Dhamu");
+      console.log(name);
+      console.log(replaced);
+
+      // Uppercase and lowercase
+      console.log(name.toUpperCase());
+      console.log(replaced.toLowerCase());
+
+      // concatination of two strings
+      var newstring = name.concat(" New string");
+      console.log(newstring);
+
+      // removal of extra spaces/whitespaces from starting and ending position
+      var WithWhiteSpaces = "   this         is    whitespace string        ";
+      console.log(WithWhiteSpaces);
+      console.log(WithWhiteSpaces.trim());
+
+      // Extraction of character from a string
+      var ch = name.charAt(4);
+      console.log(ch);
+
+      var chCode = name.charCodeAt(4); //Not very important
+      console.log(chCode);
+
+      console.log(name[5]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="XYZ"> Name: * </label>
+        <div>
+            <input type="text" name="myname" id="XYZ" required>
+        </div>
+        <br>
+        <div>
+            Role: * <input type="text" name="myRole" required>
+        </div>
+        <br>
+        <div>
+            Email: *  <input type="email" name="myEmail" required>
+        </div>
+        <br>
+        <div>
+            Date: *  <input type="date" name="myDate" required>
+        </div>
+        <br>
+        <div>
+            Bonus: *  <input type="number" name="myBonus" required>
+        </div>
+        <br>
+        <div>
+            Are you Eligible: *  <input type="checkbox" name="my Eligibility" required>
+        </div>
+        <br>
+        <div>
+            Gender: *  Male <input type="radio" name="myGender" required> Female <input type="radio" name="myGender" required> Other <input
+                type="radio" name="myGender" required>
+        </div>
+        <br>
+        <div>
+            Write about yourself: *  <br><textarea name="mytext" cols="30" rows="5"></textarea required>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car: * </label>
+            <select name="mycar" id="car">
+                <option value="">--Select Card Type--</option>
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+                <option value="swf">Verna</option>
+                <option value="swf">Thar</option>
+                <option value="swf">Fortuner</option>
+            </select required>
+
+        </div>
+        <br>
+        <div>
+            KR DE BHAI: <input type="submit" value="Submit Now">
+            <input type="Reset" name="reset Now">
+        </div>
+        <p>* Filled to be mandatory</p>
+    </form>
+</body>
+
+</html>

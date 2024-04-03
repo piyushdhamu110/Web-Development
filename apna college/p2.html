@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .box1
+        {
+            /* border: 3px solid black; */
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: green;
+            text-align: center;
+
+        }
+        .box2{
+            display: flex;
+            /* flex-flow: row wrap; */
+            flex-wrap: wrap;
+            
+
+        }
+        .common{
+            /* border: 2px solid black; */
+            width: 350px;
+            padding-left: 20px;
+            color: red;
+        }
+        #box-1{
+            background-color: grey;
+        }
+        #box-2{
+            background-color: rgba(128, 128, 128, 0.803);
+        }
+        #box-3{
+            background-color: rgba(128, 128, 128, 0.611);
+        }
+        #box-4{
+            background-color: rgba(128, 128, 128, 0.499);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Media Query for Columns-Increase or Derease the screen size to see the change
+    </div>
+    <div class="box2">
+        <div class="common" id="box-1">
+            <h1>Name 1</h1>
+            <p>I am Aman</p>
+        </div>
+        <div class="common" id="box-2">
+            <h1>Name 2</h1>
+            <p>I am Ram</p>
+        </div>
+        <div class="common" id="box-3">
+            <h1>Name 3</h1>
+            <p>I am Shayam</p>
+        </div>
+        <div class="common" id="box-4">
+            <h1>Name 4</h1>
+            <p>I am Piyush</p>
+        </div>
+    </div>
+</body>
+</html>

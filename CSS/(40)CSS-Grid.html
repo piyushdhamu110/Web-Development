@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+</head>
+<style>
+    .container {
+
+        height: 80vh;
+        /* width: 100vw; */
+        display: grid;
+        border: 3px solid;
+        /* grid-template-columns: 200px 100px 300px; */
+        /* grid-template-columns: 200px auto 300px; */
+        /* grid-template-columns: 200px 100px auto; */
+        /* grid-template-columns: 2fr 6fr 4fr; */
+        /* 2fr means 2times of the total fraction(6+4+2=12) */
+        grid-template-columns: repeat(5, auto);
+    }
+
+    .item {
+        box-sizing: border-box;
+        background-color: aqua;
+        border: 3px solid black;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- Syntax -->
+        <!-- .item{Box-$}*32 -->
+        <div class="item">Box-1</div>
+        <div class="item">Box-2</div>
+        <div class="item">Box-3</div>
+        <div class="item">Box-4</div>
+        <div class="item">Box-5</div>
+        <div class="item">Box-6</div>
+        <div class="item">Box-7</div>
+        <div class="item">Box-8</div>
+        <div class="item">Box-9</div>
+        <div class="item">Box-10</div>
+        <div class="item">Box-11</div>
+        <div class="item">Box-12</div>
+        <div class="item">Box-13</div>
+        <div class="item">Box-14</div>
+        <div class="item">Box-15</div>
+        <div class="item">Box-16</div>
+        <div class="item">Box-17</div>
+        <div class="item">Box-18</div>
+        <div class="item">Box-19</div>
+        <div class="item">Box-20</div>
+        <div class="item">Box-21</div>
+        <div class="item">Box-22</div>
+        <div class="item">Box-23</div>
+        <div class="item">Box-24</div>
+        <div class="item">Box-25</div>
+        <div class="item">Box-26</div>
+        <div class="item">Box-27</div>
+        <div class="item">Box-28</div>
+        <div class="item">Box-29</div>
+        <div class="item">Box-30</div>
+        <div class="item">Box-31</div>
+        <div class="item">Box-32</div>
+    </div>
+</body>
+
+</html>
